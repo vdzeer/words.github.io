@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+.red {
+    color: rgb(255, 0, 0);
+}
+
+body {
+    background-color: #444;
+    outline: none;
+    font-family: sans-serif;
+    color: #fff;
+    user-select: none;
+}
+
+.container {
+    margin: auto;
+    width: 1080px;
+}
+
+h1 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.main-ru, .main-en {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-title {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 22px;
+    letter-spacing: 1.5px;
+}
+
+.main-input {
+    height: 80px;
+    width: 300px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    outline: none;
+    border: none;
+    padding: 5px 20px;
+}
+
+.main-textarea {
+    height: 80px;
+    width: 600px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    outline: none;
+    border: none;
+    padding: 30px 20px;
+    resize: none;
+}
+
+.btn {
+    width: 300px;
+    height: 40px;
+    background-color: #fff;
+    color: #000;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.words {
+    background-color: #fff;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    min-height: 10vh;
+    width: 100%;
+    padding: 10px;
+    color: #000;
+}
+
+.words-lang {
+    width: 40%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item {
+    min-height: 40px;
+    width: 95%;
+    margin: 10px auto;
+    padding: 0px 20px;
+    border-bottom: 1px solid #000;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.item-ru, .item-en {
+    flex-basis: 49.5%;
+    padding: 15px 20px;
+}
+
+.item-en {
+    border-left: 1px solid #000;
+    margin-bottom: 10px;
+}
+
+.item-remove {
+    flex-basis: 1%;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.item-ru__text {
+    font-weight: 700;
+}
+
+.item-en__text {
+    display: block;
+    margin-bottom: 2px;
+}

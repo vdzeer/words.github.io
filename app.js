@@ -1,5 +1,5 @@
 'use strict';
-
+// v1.0
 const rusText = document.querySelector('.main-input'),
     enText = document.querySelector('.main-textarea'),
     btn = document.querySelector('.btn'),

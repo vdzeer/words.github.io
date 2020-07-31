@@ -30,9 +30,12 @@ const addWords = inx => {
     addEventDel();
 }
 
-diList.forEach((item, idx) => {
-    addWords(idx);
-});
+const form = () => {
+    diList.forEach((item, idx) => {
+        addWords(idx);
+    });
+}
+
 
 btn.addEventListener('click', () => {
     if (rusText.value === '' || enText.value === '') {
@@ -49,6 +52,7 @@ btn.addEventListener('click', () => {
             enText.style.border = 'none';
         }, 3000);
     } else {
+        form();
         diList.push(new CreateWord(enText.value, rusText.value));
         localStorage.setItem('words', JSON.stringify(diList));
         addWords(diList.length - 1);
@@ -85,4 +89,12 @@ function addEventDel() {
     }
 }
 
+function init() {
+    if(!(localStorage.length < 1)) {
+        form();
+    }
+}
+
 addEventDel();
+
+init();
